@@ -1,12 +1,51 @@
 # Plan
 
-- [ ] Make NavLinks/Routes
 - [ ] Organize Folders
   - [ ] views
-    - [ ] teams.js (all the teams)
-    - [ ] team.js (individual teams, url /teams/:id)
-    - [ ] players.js (all the players)
-    - [ ] player.js (individual players, url /players/:id)
+    - [ ] Teams.js (all the teams)
+    - [ ] Team.js (individual teams, url /teams/:id)
+    - [ ] Players.js (all the players)
+    - [ ] Player.js (individual players, url /players/:id)
   - [ ] components
     - [ ] TeamList.js
     - [ ] PlayerList.js
+    - [ ] TeamDetail.js
+    - [ ] PlayerDetail.js
+  - [ ] services
+    - [x] client.js
+    - [ ] players.js -> fetchPlayers, fetchPlayerById to match by id
+    - [ ] teams.js -> fetchTeams, fetchTeamById to match by id
+- [ ] Make NavLinks/Routes
+
+Teams
+
+1. Starting with views to set States
+
+- [ ] Teams.js -> useEffect and fetchData from teams.js using fetchTeams, useState [teams, setTeams]
+
+2. After setStates and fetchData, work on TeamList to render all teams
+
+- [ ] TeamList.js -> teams.map to create team links that will link to Team.js
+
+3. Team.js will render each team individually by id
+
+- [ ] use useEffect and fetchTeamById API call, and props.match.params.id to render individual team
+- [ ] renders team details by calling TeamDetail.js component
+
+4. TeamDetail.js includes list of players for individual team
+
+- [ ] .map list of players with Player Links according to team
+
+Players
+
+1. Create views to setStates
+
+- [ ] Players.js -> useEffect and fetchData from players.js using fetchPlayers, useState [ players, setPlayers]
+
+2. Create PlayersList.js component that renders all players in the league
+
+- [ ] PlayersList.js takes in players and setPlayers, renders player links
+
+3. Player.js renders player information individually (/players/:id)
+
+- [ ] display individual player information
