@@ -2,20 +2,20 @@
 
 ## Organizing Folders
 
-- [ ] views
-  - [ ] Teams.js (all the teams)
-  - [ ] Team.js (individual teams, url /teams/:id)
-  - [ ] Players.js (all the players)
-  - [ ] Player.js (individual players, url /players/:id)
-- [ ] components
-  - [ ] TeamList.js
-  - [ ] PlayerList.js
-  - [ ] TeamDetail.js
-  - [ ] PlayerDetail.js
+- [x] views
+  - [x] Teams.js (all the teams)
+  - [x] Team.js (individual teams, url /teams/:id)
+  - [x] Players.js (all the players)
+  - [x] Player.js (individual players, url /players/:id)
+- [x] components
+  - [x] TeamList.js
+  - [x] PlayerList.js
+  - [x] TeamDetail.js
+  - [x] PlayerDetail.js
 - [ ] services
   - [x] client.js
-  - [ ] players.js -> fetchPlayers, fetchPlayerById to match by id
-  - [ ] teams.js -> fetchTeams, fetchTeamById to match by id
+  - [x] players.js -> fetchPlayers, fetchPlayerById to match by id
+  - [x] teams.js -> fetchTeams, fetchTeamById to match by id
 - [ ] Make NavLinks/Routes
 
 ## Start with Team
