@@ -7,16 +7,27 @@
   - [x] Team.js (individual teams, url /teams/:id)
   - [x] Players.js (all the players)
   - [x] Player.js (individual players, url /players/:id)
+  - [x] Home.js
 - [x] components
   - [x] TeamList.js
   - [x] PlayerList.js
   - [x] TeamDetail.js
   - [x] PlayerDetail.js
-- [ ] services
+- [x] services
   - [x] client.js
   - [x] players.js -> fetchPlayers, fetchPlayerById to match by id
   - [x] teams.js -> fetchTeams, fetchTeamById to match by id
-- [ ] Make NavLinks/Routes
+- [x] Make NavLinks/Routes in App.js
+  - [x] Teams Nav Link
+  - [x] Teams/:id navlink
+  - [x] Player Nav Link
+
+## Create API calls to SupaBase
+
+- [ ] fetchTeams
+- [ ] fetchTeamById
+- [ ] fetchPlayers
+- [ ] fetchPlayerById
 
 ## Start with Team
 
