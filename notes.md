@@ -25,7 +25,7 @@
 ## Create API calls to SupaBase
 
 - [x] fetchTeams
-- [ ] fetchTeamById
+- [x] fetchTeamById
 - [ ] fetchPlayers
 - [ ] fetchPlayerById
 
@@ -41,8 +41,8 @@
 
 3. Team.js will render each team individually by id
 
-- [ ] use useEffect and fetchTeamById API call, and props.match.params.id to render individual team
-- [ ] renders team details by calling TeamDetail.js component
+- [x] use useEffect and fetchTeamById API call, and props.match.params.id to render individual team
+- [x] renders team details by calling TeamDetail.js component
 
 4. TeamDetail.js includes list of players for individual team
 
