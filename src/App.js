@@ -13,19 +13,15 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <header>
-            <NavLink to="/teams" data-testid="teams-link">
-              Teams
-            </NavLink>
-            <NavLink to="/players" data-testid="players-link">
-              Players
-            </NavLink>
+            <NavLink to="/teams">Teams</NavLink>
+            <NavLink to="/players">Players</NavLink>
           </header>
           <Switch>
-            <Route exact path="/" component={Home} />
             <Route exact path="/teams" component={Teams} />
             <Route exact path="/teams/:id" component={Team} />
             {/* <Route exact path="/players" component={Players} /> */}
             {/* <Route exact path="/players/:id" component={Player} /> */}
+            <Route exact path="/" component={Home} />
           </Switch>
         </BrowserRouter>
       </header>
