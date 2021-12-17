@@ -5,7 +5,7 @@ import './Team.css';
 export default function TeamDetail({ team }) {
   return (
     <div>
-      {team.map((item) => (
+      {team.players.map((item) => (
         <div className="team-detail-card" key={item.id}>
           <p>{item.name}</p>
           <p>{item.city}</p>
