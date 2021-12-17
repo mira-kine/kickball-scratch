@@ -10,5 +10,3 @@ export function checkError({ data, error }) {
   }
   return data;
 }
-
-export default client;

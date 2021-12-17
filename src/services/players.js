@@ -1,3 +1,5 @@
+// import { client } from './client';
+
 export async function fetchPlayers() {
   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/players?`, {
     headers: {
@@ -8,3 +10,7 @@ export async function fetchPlayers() {
   const data = await resp.json();
   return data;
 }
+
+// export async function fetchPlayerById(id) {
+//   const resp = await client.from('players');
+// }

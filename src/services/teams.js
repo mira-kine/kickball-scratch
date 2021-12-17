@@ -1,5 +1,4 @@
-import client from './client';
-
+import { checkError, client } from './client';
 export async function fetchTeams() {
   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/teams?`, {
     headers: {
@@ -11,17 +10,7 @@ export async function fetchTeams() {
   return data;
 }
 
-// export async function fetchTeamById(teams) {
-//   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/teams/?${teams.id}`, {
-//     headers: {
-//       apikey: process.env.REACT_APP_SUPABASE_KEY,
-//       Authorization: `Bearer ${process.env.REACT_APP_SUPABASE_KEY}`,
-//     },
-//   });
-//   const data = await resp.json();
-//   return data;
-// }
-
 export async function fetchTeamById(id) {
-  return client.from('teams').select(`*, name (*)`).match({ id: id }).single();
+  const resp = await client.from('teams').select('*, players(*)').match({ id });
+  return checkError(resp);
 }

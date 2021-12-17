@@ -2,18 +2,18 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchTeamById } from '../services/teams';
 import TeamDetail from '../components/Team/TeamDetail';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
-export default function Team() {
+export default function Team(props) {
   const [team, setTeam] = useState([]);
-  const { id } = useParams();
+  // const [players, setPlayers] = useState([]);
+  const id = props.match.params.id;
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchTeamById(id);
       setTeam(data);
     };
-    fetchData;
+    fetchData();
   }, [id]);
 
   return (
