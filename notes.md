@@ -37,7 +37,7 @@
 
 2. After setStates and fetchData, work on TeamList to render all teams
 
-- [ ] TeamList.js -> teams.map to create team links that will link to Team.js
+- [x] TeamList.js -> teams.map to create team links that will link to Team.js
 
 3. Team.js will render each team individually by id
 
