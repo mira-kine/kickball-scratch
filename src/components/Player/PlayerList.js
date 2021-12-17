@@ -7,7 +7,7 @@ export default function PlayerList({ players }) {
       <div className="container">
         <div className="team-cards">
           {players.map((players) => (
-            <Link key={players.id} to={`/playerss/${players.id}`}>
+            <Link key={players.id} to={`/players/${players.id}`}>
               {players.name}
             </Link>
           ))}

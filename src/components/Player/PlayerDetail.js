@@ -4,11 +4,9 @@ export default function PlayerDetail({ player }) {
   return (
     <div>
       <div className="player-detail">
-        {player.map((item) => (
-          <div className="player-card" key={item.id}>
-            <p>{item.name}</p>
-          </div>
-        ))}
+        <p>{player.name}</p>
+        <p>{player.position}</p>
+        <p>Team ID: {player.team_id}</p>
       </div>
     </div>
   );
