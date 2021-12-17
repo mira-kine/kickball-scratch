@@ -1,4 +1,4 @@
-// import { client } from './client';
+import { checkError, client } from './client';
 
 export async function fetchPlayers() {
   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/players?`, {
@@ -11,6 +11,7 @@ export async function fetchPlayers() {
   return data;
 }
 
-// export async function fetchPlayerById(id) {
-//   const resp = await client.from('players');
-// }
+export async function fetchPlayerById(id) {
+  const resp = await client.from('players').select('*, players(*)').match({ id }).single();
+  return checkError(resp);
+}

@@ -16,12 +16,17 @@ export default function Team(props) {
     };
     fetchData();
   }, [id]);
+
   if (loading) {
     return <div>loading</div>;
   }
 
   return (
     <div>
+      <div className="team-detail-card">
+        <span>{team.name}</span>
+        <span>{team.city}</span>
+      </div>
       <TeamDetail team={team} />
     </div>
   );

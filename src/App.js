@@ -5,7 +5,7 @@ import Home from './views/Home';
 import Teams from './views/Teams';
 import Team from './views/Team';
 // import Players from './views/Players';
-// import Player from './views/Player';
+import Player from './views/Player';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/teams" component={Teams} />
             <Route exact path="/teams/:id" component={Team} />
             {/* <Route exact path="/players" component={Players} /> */}
-            {/* <Route exact path="/players/:id" component={Player} /> */}
+            <Route exact path="/players/:id" component={Player} />
             <Route exact path="/" component={Home} />
           </Switch>
         </BrowserRouter>
