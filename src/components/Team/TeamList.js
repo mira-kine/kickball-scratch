@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Team from '../../views/Team';
+// import Team from '../../views/Team';
 import './Team.css';
 
 export default function TeamList({ teams }) {
@@ -11,7 +11,6 @@ export default function TeamList({ teams }) {
           {teams.map((team) => (
             <Link key={team.id} to={`/teams/${team.id}`}>
               {team.name}
-              <Team />
             </Link>
           ))}
         </div>

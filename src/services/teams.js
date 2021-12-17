@@ -10,6 +10,8 @@ export async function fetchTeams() {
 }
 
 export async function fetchTeamById(teams) {
+  // const params = new URLSearchParams();
+  // params.set()
   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/teams/${teams.id}`, {
     headers: {
       apikey: process.env.REACT_APP_SUPABASE_KEY,

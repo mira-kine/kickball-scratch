@@ -26,7 +26,7 @@
 
 - [x] fetchTeams
 - [x] fetchTeamById
-- [ ] fetchPlayers
+- [x] fetchPlayers
 - [ ] fetchPlayerById
 
 ## Start with Team
@@ -46,7 +46,7 @@
 
 4. TeamDetail.js includes list of players for individual team
 
-- [ ] .map list of players with Player Links according to team
+- [x] .map list of players with Player Links according to team
 
 ## Players
 
