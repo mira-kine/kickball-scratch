@@ -3,9 +3,9 @@ import { BrowserRouter, NavLink, Switch } from 'react-router-dom/cjs/react-route
 import './App.css';
 import Home from './views/Home';
 import Teams from './views/Teams';
-import Team from './views/Team';
-import Players from './views/Players';
-import Player from './views/Player';
+// import Team from './views/Team';
+// import Players from './views/Players';
+// import Player from './views/Player';
 
 function App() {
   return (
@@ -13,19 +13,19 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <header>
-            <NavLink to="/teams" exact>
+            <NavLink to="/teams" data-testid="teams-link">
               Teams
             </NavLink>
-            <NavLink to="/players" exact>
+            <NavLink to="/players" data-testid="players-link">
               Players
             </NavLink>
           </header>
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/teams" exact component={Teams} />
-            <Route path="/teams/:id" exact component={Team} />
-            <Route path="/players" exact component={Players} />
-            <Route path="/players/:id" exact component={Player} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/teams" component={Teams} />
+            {/* <Route exact path="/teams/:id" component={Team} />
+            <Route exact path="/players" component={Players} />
+            <Route exact path="/players/:id" component={Player} /> */}
           </Switch>
         </BrowserRouter>
       </header>

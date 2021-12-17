@@ -24,7 +24,7 @@
 
 ## Create API calls to SupaBase
 
-- [ ] fetchTeams
+- [x] fetchTeams
 - [ ] fetchTeamById
 - [ ] fetchPlayers
 - [ ] fetchPlayerById
@@ -33,7 +33,7 @@
 
 1. Starting with views to setStates
 
-- [ ] Teams.js -> useEffect and fetchData from teams.js using fetchTeams, useState [teams, setTeams]
+- [x] Teams.js -> useEffect and fetchData from teams.js using fetchTeams, useState [teams, setTeams]
 
 2. After setStates and fetchData, work on TeamList to render all teams
 
