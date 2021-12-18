@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchTeamById } from '../services/teams';
 import TeamDetail from '../components/Team/TeamDetail';
+import './Views.css';
 
 export default function Team(props) {
   const [team, setTeam] = useState([]);
@@ -24,8 +25,8 @@ export default function Team(props) {
   return (
     <div>
       <div className="team-detail-card">
-        <span>{team.name}</span>
-        <span>{team.city}</span>
+        <p>{team.name}</p>
+        <p>{team.city}</p>
       </div>
       <TeamDetail team={team} />
     </div>

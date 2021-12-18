@@ -11,3 +11,14 @@
 body {
   background-color: white;
 }
+
+.header-link {
+  display: flex;
+  margin: 10px;
+}
+
+.teams-link,
+.players-link,
+.home-link {
+  margin: 10px;
+}

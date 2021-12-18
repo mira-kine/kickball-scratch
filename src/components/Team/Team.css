@@ -7,3 +7,14 @@ body {
   flex-direction: column;
   margin: 10px;
 }
+
+.team-list-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.title {
+  margin: 15px;
+  font-size: 3rem;
+}
