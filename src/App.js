@@ -1,7 +1,7 @@
 import { Route } from 'react-router-dom';
 import { BrowserRouter, NavLink, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
-import Home from './views/Home';
+import Home from './views/Home/Home';
 import Teams from './views/Teams';
 import Team from './views/Team';
 import Players from './views/Players';
