@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { fetchPlayerById } from '../services/players';
-import PlayerDetail from '../components/Player/PlayerDetail';
+import { fetchPlayerById } from '../../services/players';
+import PlayerDetail from '../../components/Player/PlayerDetail';
 
 export default function Player(props) {
   const [player, setPlayer] = useState([]);

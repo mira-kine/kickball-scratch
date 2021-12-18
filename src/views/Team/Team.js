@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { fetchTeamById } from '../services/teams';
-import TeamDetail from '../components/Team/TeamDetail';
-import './Views.css';
+import { fetchTeamById } from '../../services/teams';
+import TeamDetail from '../../components/Team/TeamDetail';
 
 export default function Team(props) {
   const [team, setTeam] = useState([]);

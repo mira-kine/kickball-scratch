@@ -1,7 +1,7 @@
 import React from 'react';
-import { fetchTeams } from '../services/teams';
+import { fetchTeams } from '../../services/teams';
 import { useEffect, useState } from 'react';
-import TeamList from '../components/Team/TeamList';
+import TeamList from '../../components/Team/TeamList';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);

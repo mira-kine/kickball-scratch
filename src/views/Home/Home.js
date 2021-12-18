@@ -1,5 +1,5 @@
 import React from 'react';
-import './Views.css';
+import './Home.css';
 
 export default function Home() {
   return <div className="welcome">Kickball League</div>;
